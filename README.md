@@ -1,0 +1,1 @@
+Projects from the Udacity [Object-Oriented JavaScript](https://www.udacity.com/course/object-oriented-javascript--ud015) course taught by Marcus Phillips of Hack Reactor.
