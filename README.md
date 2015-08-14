@@ -1,1 +1,1 @@
-Projects from the Udacity [Object-Oriented JavaScript](https://www.udacity.com/course/object-oriented-javascript--ud015) course taught by Marcus Phillips of Hack Reactor.
+Projects from the Udacity [Object-Oriented JavaScript](https://www.udacity.com/course/object-oriented-javascript--ud015) course taught by Marcus Phillips of Hack Reactor and the [JavaScript Testing](https://www.udacity.com/course/javascript-testing--ud549) course taught by Michael Wales.
