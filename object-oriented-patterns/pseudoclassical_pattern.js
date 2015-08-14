@@ -1,9 +1,14 @@
 // Pseudoclassical-pattern
 var Car = function(loc) {
-    // Object.create creates a new object with the given
-    // argument object as its prototype
-    var obj = Object.create(Car.prototype);
-    return obj;
+    /* When called with keyword 'new' this step happens:
+    var this = Object.create(Car.prototype);
+    */
+
+    this.loc
+    
+    /* When called with keyword 'new' this step happens:
+    return this;
+    */
 };
 
 Car.prototype.move = function(){
@@ -14,8 +19,11 @@ Car.prototype.move = function(){
 console.log(Car.prototype.constructor);
 
 
-var amy = Car(1);
+
+var amy = new Car(1);
 amy.move();
-var ben = Car(9);
+var ben = new Car(9);
 ben.move();
 
+console.log(amy.constructor);
+console.log(amy instanceof Car); //True
