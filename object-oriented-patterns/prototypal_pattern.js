@@ -1,20 +1,24 @@
-// Prototypal class pattern
+// Prototypal pattern
 var Car = function(loc) {
     // Object.create creates a new object with the given
     // argument object as its prototype
-    var obj = Object.create(methods);
+    var obj = Object.create(Car.prototype);
     return obj;
 };
 
-var methods = {
-    move: function(){
+Car.prototype.move = function(){
         this.loc++;
-    }
 };
 
 
-var amy = carlike({}, 1);
+console.log(Car.prototype.constructor);
+
+
+
+var amy = Car(1);
 amy.move();
-var ben = {loc:9};
+var ben = Car(9);
 ben.move();
 
+console.log(amy.constructor);
+console.log(amy instanceof Car); //True
