@@ -8,12 +8,14 @@ var Car = function(loc) {
 
 Car.prototype.move = function(){
         this.loc++;
-    }
 };
 
 
-var amy = carlike({}, 1);
+console.log(Car.prototype.constructor);
+
+
+var amy = Car(1);
 amy.move();
-var ben = {loc:9};
+var ben = Car(9);
 ben.move();
 
